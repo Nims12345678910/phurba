@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:grid;
+            grid-template-areas:
+            "header header"
+            "menu content"
+            "footer footer";
+            grid-template-columns:1fr 2fr;
+            gap:5px;
+
+        }
+
+
+
+
+        .container> div.header{
+            grid-area: header;
+        }
+
+
+
+        .container>div.menu{
+            grid-area: menu;
+        }
+
+
+
+        .container>div.content{
+            grid-area: content;
+        }
+
+
+
+
+        .container>div.footer{
+            grid-area: footer;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container"style="background-color:lightblue">
+
+        <div class="header"style="background-color:lightpink">
+            <h1>This is header</h1>
+        </div>
+        <div class="menu"style="background-color:lightyellow">
+           <h2>This is menu</h2>
+        </div>
+        <div class="content"style="background-color:lightgreen">
+          <h3>This is content</h3>
+        </div>
+        <div class="footer"style="background-color:lightpurple">
+            <h4>This is footer</h4>
+        </div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
